@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SUICIDAL ANALYSIS</title> <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="static/img/favicon1.png" type="image/x-icon"/>
+    <title>SUICIDAL ANALYSIS</title>
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/main.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Almendra' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Rancho|Audiowide|Kaushan+Script|Libre+Barcode+128+Text|Righteous|Handlee" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <script>
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+						if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+								document.getElementById("myBtn").style.display = "block";
+						} else {
+								document.getElementById("myBtn").style.display = "none";
+						}
+				}
+
+				// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+						document.body.scrollTop = 0;
+						document.documentElement.scrollTop = 0;
+				}
+		</script>
+</head>
+<body>
+ {% include 'index.html' %}
+
+    {% block content %}
+         <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+
+	<div id="headerwrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>Household power consumption</h1>
+				</div>
+
+				<div class="col-lg-6">
+					<p class="mb-4">
+                                    Technological advancements have led to a growth in equipment of electricity-based,
+                        which has increase daily energy demand and excessive electricity consumption. The Energy
+                        consumption (EC) must be forecasted in order to improve power management and cooperation
+                        between electricity utilized in a building and smart grid. Power consumption forecast
+                        model-based household electricity usage and Long Short-Term Memory (LSTM)is suggested to
+                        efficiently reduce the waste of electricity resources in the generation of power and
+                        transmission plan. To remove the volatility of actual data on power use in this study,
+                        the sample data is first denoised based on household electricity. Then based on the samples
+                        that are pre-processed the LSTM model is used to train, and the model is verified and
+                        predict daily power consumption based on the power used in the household. The experimental
+                        outcome reveal that the prediction performance of the model performs better than the
+                        traditional Machine learning (ML) models.
+                                </p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+    <section class="section-padding" id="about">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h2 class="mb-lg-3 mb-3">Introduction</h2>
+
+                            <p>
+                                Power consumption forecasting is a crucial technological strategy for managing power
+                                demand. An accurate power forecast model is required in order to rationally organize
+                                the power supply plan of the power grid and prevent the waste of power resources,
+                                which is considerable relevance for creating an energy-saving society [10]. The
+                                operation and planning of the electricity supply firm include the prediction of
+                                power usage. Regarding electricity supply and demand, reserve power must be ready
+                                for the steady supply of energy.
+                                Recently, with the advancement of Deep Learning and Artificial Intelligence
+                                technologies, power supply businesses and researchers have developed a variety
+                                of approaches for estimating electricity demand [9]. However, because power is
+                                hard to store, it is essential to forecast demand. In this study, we present a
+                                LSTM neural network that can successfully forecast household energy usage by
+                                extracting spatial-temporal information. Long Short-term memory (LSTM) and deep
+                                neural network have been proven through experiments to be able to extract irregular
+                                aspects of electric power use [1]. The LSTM proposed to automatically forecast
+                                household use. Power consumption contain both spatial and temporal information and
+                                is multivariate time series. In order to predict the home power consumption, the
+                                LSTM neural network can
+                            </p>
+
+                            <p>
+                                LSTM model
+                                To provide long-term memory capacities, the Long Short-Term Memory model swaps out
+                                the hidden layers with LSTM gates components. The gate state, which permeates the
+                                whole hidden link, is the LSTMs strategic. Through the gate structure, LSTM regulates
+                                the state of the cell to add or remove information. The LSTM model can recall a lot
+                                of information because of the gate structure, which allows information to travel
+                                through only when it is specially needed. This model is similar to the RNN models,
+                                but the issue is that LSTM resolves the vanishing of the gradient by context of
+                                information. The Adam optimization algorithm is used to improve the LSTM model,
+                                this helps in updating the weight and the test set is used to evaluate the model
+                                performance.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+
+{% endblock %}
+</body>
+</html>
